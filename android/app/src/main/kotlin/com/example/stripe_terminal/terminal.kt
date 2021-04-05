@@ -23,6 +23,7 @@ class TerminalPlugin : FlutterPlugin, TerminalListener, ConnectionTokenProvider,
     }
 
     override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
+        // this line prevents compiling with --release flag
         Terminal.initTerminal(context, LogLevel.VERBOSE, this, this)
     }
 

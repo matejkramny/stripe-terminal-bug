@@ -54,6 +54,11 @@ flutter {
     source '../..'
 }
 
+repositories {
+  maven { url 'https://d37ugbyn3rpeym.cloudfront.net/terminal/android-betas' }
+}
+
 dependencies {
+    implementation "com.stripe:stripeterminal:2.0.0-b2"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
